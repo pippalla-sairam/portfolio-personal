@@ -1,0 +1,112 @@
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--secondary-color);
+}
+
+.btn-secondary {
+    background: var(--bg-dark);
+    color: var(--text-light);
+}
+
+.btn-secondary:hover {
+    background: var(--text-dark);
+}
+
+/* Text Alignment */
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Spacing */
+.margin-top {
+    margin-top: 2rem;
+}
+
+.margin-bottom {
+    margin-bottom: 2rem;
+}
+
+.padding {
+    padding: 1rem;
+}
+
+.padding-lg {
+    padding: 2rem;
+}
+
+/* Flexbox */
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-space-between {
+    justify-content: space-between;
+}
+
+/* Grid System */
+.grid {
+    display: grid;
+    gap: 20px;
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 768px) {
+
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Visibility */
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
